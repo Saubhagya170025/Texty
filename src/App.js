@@ -2,6 +2,7 @@
 import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
+import Alert from './components/Alert';
 import React, {useState} from 'react'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   return (   
    <>
    <Navbar title="MediSathi" new="Extra"  mode={mode} toggleonClick = {toggleonClick} btntext={btntext}/>
+   <Alert message ="This is basic test alert"/>
    <TextForm heading="Enter your text hereeeee" mode={mode}/>
    <About/>
    </>
