@@ -7,12 +7,15 @@ export default function TextForm(props) {
     // console.log('Uppercase was clicked');
     let newtext = text.toUpperCase();
     setText(newtext);
+    props.showAlert("Converted into upper case","success");
+    
   }
 
   const handledownclick = ()=>{ 
     // console.log('Uppercase was clicked');
     let newtext = text.toLowerCase()  ;
     setText(newtext);
+    props.showAlert("Converted into Lower case","success");
   }
   
   const handleonchange = (event)=>{
@@ -23,6 +26,7 @@ export default function TextForm(props) {
   const handleclearnclick =()=> {
     let newtext =""
     setText(newtext);
+    props.showAlert("Text Cleared","success");
   }
 
   const handletitleclick = () => {
@@ -30,6 +34,7 @@ export default function TextForm(props) {
       return match.toUpperCase();
     });
     setText(newText);
+    props.showAlert("Converted into Title case","success");
   }
   
   
