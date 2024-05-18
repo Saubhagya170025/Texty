@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import React, { useState } from 'react'
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 // -------------------------------------------------------------------------------------------
 
@@ -58,18 +58,19 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/*<Router>*/}
         <Navbar title="MediSathi" new="Extra" mode={mode} toggleonClick={toggleonClick} btntext={btntext} />
         <Alert alert={alert} />
   
-        <Routes>
+        {/* <Routes> */}
           {/* About Route */}
-          <Route exact path="/About" element={<About />} />
+        {/*  <Route exact path="/About" element={<About />} />
   
-          {/* TextForm Route (assuming you want it at the root path) */}
-          <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text hereeeee" mode={mode} />} />
-        </Routes>
-      </Router>
+        {/* TextForm Route (assuming you want it at the root path) */}
+         {/* <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text hereeeee" mode={mode} />} /> */}
+         <TextForm showAlert={showAlert} heading="Enter your text hereeeee" mode={mode} />
+        {/* </Routes> */}
+      {/* </Router>     */}
     </>
   );
   
