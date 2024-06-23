@@ -59,7 +59,7 @@ function App() {
   return (
     <>
       {/*<Router>*/}
-        <Navbar title="MediSathi" new="Extra" mode={mode} toggleonClick={toggleonClick} btntext={btntext} />
+        <Navbar title="Texty" new="Extra" mode={mode} toggleonClick={toggleonClick} btntext={btntext} />
         <Alert alert={alert} />
   
         {/* <Routes> */}
@@ -68,7 +68,7 @@ function App() {
   
         {/* TextForm Route (assuming you want it at the root path) */}
          {/* <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text hereeeee" mode={mode} />} /> */}
-         <TextForm showAlert={showAlert} heading="Enter your text hereeeee" mode={mode} />
+         <TextForm showAlert={showAlert} heading="Enter your text here..." mode={mode} />
         {/* </Routes> */}
       {/* </Router>     */}
     </>
